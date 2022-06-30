@@ -1,0 +1,140 @@
+{
+	"dInternational":[{
+			"dName":"Dr. MANNU L.N.G",
+			"des":"MD, Ph.D, ICU Director, University Hospital, Brussels Belgium",
+			"pic":"pic1.jpg"
+		},
+		{
+			"dName":"HATEM SOLIMAN ABOUMARIE",
+			"des":"Consultant in Cardiothoracic Intensive Care at Harefield Hospital at the Royal Brompton and Harefield Hospitals, London, UK",
+			"pic":"pic2.jpg"
+		}],
+	
+	"dNational":[{
+			"dName":"Dr. JOSE CHACKO",
+			"des":"HOD & Senior Consultant, Lisie Hospital, Ernakulam",
+			"pic":"pic3.jpg"
+		},
+		{
+			"dName":"Dr. S. K. TODI",
+			"des":"Director & HOD, Critical Care & Emergency Hospital Amri, Kolkata",
+			"pic":"pic4.jpg"
+		},
+		{
+			"dName":"Dr. ASHIT HEGDE",
+			"des":"MBBS, MD (Internal Medicine) MRCP, HOD, Critical Care, P.D. Hinduja, Hospital, Mumbai",
+			"pic":"pic5.jpg"
+		},
+		{
+			"dName":"Dr. YASH JAVERI",
+			"des":"Head, Critical Care & Anaesthesia & Emergency Medicine Regency, Lucknow",
+			"pic":"pic6.jpg"
+		},
+		{
+			"dName":"Dr. PRADIP BHATTACHARYA",
+			"des":"HOD, Critical Care, RIMS, Ranchi",
+			"pic":"pic7.jpg"
+		},
+		{
+			"dName":"Prof. J. V. DIVATIA",
+			"des":"Prof. & HOD Anaesthesia, Critical Care & Pain, Tata Memorial Hospital, Mumbai",
+			"pic":"pic8.jpg"
+		},
+		{
+			"dName":"Dr. NARENDRA RUNGTA",
+			"des":"Chairman, Critical Care Foundation, Rajasthan, India",
+			"pic":"pic9.jpg"
+		},
+		{
+			"dName":"Dr. VINOD KUMAR SINGH",
+			"des":"Senior Consultant, Critical Care & Emergency Medicine, SGRH, New Delhi",
+			"pic":"pic10.jpg"
+		},
+		{
+			"dName":"Dr. RAJESH CHAWLA",
+			"des":"HOD, Pulmonary Medicine & Critical Care & Emergency, Indraprastha Apollo Hospital, New Delhi",
+			"pic":"pic11.jpg"
+		},
+		{
+			"dName":"Dr. PRADEEP RANGAPPA",
+			"des":"Senior Consultant, Columbia ASIA, Bangalore",
+			"pic":"pic12.jpg"
+		},
+		{
+			"dName":"Dr. NARENDRA NATH JENA",
+			"des":"Director Institute of Emergency Medicine, MMHRC, Madurai",
+			"pic":"pic13.jpg"
+		},
+		{
+			"dName":"Dr. RAJESH CHANDRA MISHRA",
+			"des":"Consultant Director President - ISCCM, Khyati Multispeciality Hospitals, Ahmedabad",
+			"pic":"pic14.jpg"
+		},
+		{
+			"dName":"Dr. HEMANSHU PRABHAKAR",
+			"des":"Prof. Department of Neuroanaesthesiology & Critical Care, AIIMS, New Delhi",
+			"pic":"pic15.jpg"
+		},
+		{
+			"dName":"Dr. DEEPAK GOVIL",
+			"des":"Doctors of Institute Critical Care and Anaesthesiology, Medanta The Medicity, Gurgaon",
+			"pic":"pic16.jpg"
+		},
+		{
+			"dName":"Dr. HARSH SAPRA",
+			"des":"Doctors Institute of Neuroscience, Medanta The Medicity, Gurgaon",
+			"pic":"pic17.jpg"
+		},
+		{
+			"dName":"Dr. RAM E RAJAGOPALAN",
+			"des":"MBBS, AB(Internal Medicine), AB ( Critical Care), Past President, ISCCM, FICCM Prof. & HOCS, SRMC, Chennai",
+			"pic":"pic18.jpg"
+		},
+		{
+			"dName":"Dr. SUMIT RAY",
+			"des":"HOD, Critical Care, Holy Family Hospital, New Delhi",
+			"pic":"pic19.jpg"
+		},
+		{
+			"dName":"Dr. M. C. MISHRA",
+			"des":"MBBS, MD, MS, (Gen. Surgery), Ex-HOD Gen. Surgery, AIIMS, Ex Director, AIIMS",
+			"pic":"pic20.jpg"
+		},
+		{
+			"dName":"Dr. AKASH SHUKLA",
+			"des":"Prof & HOD Department of Gastroenterology LTMC Sion, Mumbai",
+			"pic":"pic21.jpg"
+		},
+		{
+			"dName":"Dr. C. NARASIMHAN",
+			"des":"Consultant Cardiologist Care Hyderabad",
+			"pic":"pic22.jpg"
+		},
+		{
+			"dName":"Dr. KAPIL G. ZIRPE",
+			"des":"Ruby Hall Clinic, Pune",
+			"pic":"pic23.jpg"
+		},
+		{
+			"dName":"Dr. SANDEEP DEWAN",
+			"des":"Director & HOD, Critical Care Medicine, ECMO FMRI, Gurugram",
+			"pic":"pic24.jpg"
+		},
+		{
+			"dName":"Dr. RAJESH MISHRA",
+			"des":"Sanjeevani Super Speciality Hospital, Ahmedabad",
+			"pic":"pic25.jpg"
+		},
+		{
+			"dName":"Dr. SUMIT RAY",
+			"des":"Chairman, Department of Critical Care, Artemis Hospital, Gurugram",
+			"pic":"pic26.jpg"
+		},
+		{
+			"dName":"Dr. NAGESHWAR REDDY",
+			"des":"Chief of Gastroenterology, Asian Institute of Gastroenterology, Hyderabad",
+			"pic":"pic27.jpg"
+		}
+	]
+	
+}

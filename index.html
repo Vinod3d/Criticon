@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!--font awesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+	
+    <link rel="stylesheet" href="css/Universal_style.css">
+</head>
+<body>
+	
+	
+	<nav class="navbar navbar-expand-lg navbar-light bg-white px-5">
+		<div class="container-fluid">
+			<a class="navbar-brand logo" href="#">
+				<h2 class="fs-4 m-0 p-1">Criti<span>con</span></h2>
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+				<ul class="navbar-nav list-style-none">
+					<li class="nav-item">
+						<a class="nav-link active" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Our Faculty</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Schedule</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Our Partners</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Venue</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<section class="slider">
+		<div class="slider-bg">
+			<div class="container py-5">
+				<div class="slide-contant py-5">
+					<h2 class="pb-2">CRITICON RAIPUR - 2022</h2>
+					<p class="fst-italic fs-4">2nd Annual Congress of Indian Sepsis Forum</p>
+					<h2 class="fs-3 pb-2">"EXCELLENCE IN CRITICAL CARE"</h2>
+					<div class="location pb-2">
+						<h3>September 3rd - 4th 2022</h3>
+						<p class="text-white">Venue : Hotel Courtyard by Marriott <br>
+							Raipur, Chhattisgarh-492001</p>
+					</div>
+					<div class="button pt-5">
+						<a class="btn text-center" data-bs-toggle="modal" data-bs-target="#myModal">RESERVE MY SEAT</a>
+
+						<!-- The Modal -->
+						<div class="modal" id="myModal">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+							
+									<!-- Modal Header -->
+									<div class="modal-header">
+										<h4 class="modal-title">Modal Heading</h4>
+										<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+									</div>
+							
+									<!-- Modal body -->
+									<div class="modal-body">
+										<form action="#" method="POST" target="_top" id="paypal-regn" novalidate="novalidate">
+											<div class="row pb-3 text-start">
+												<div class="col-sm-6">
+													<div class="form-group ">
+														<label>First Name</label>
+														<input type="text" class="form-control" name="first_name" placeholder="First Name" required="" aria-required="true">
+													</div>
+												</div>
+												<div class="col-sm-6">
+													<div class="form-group">
+														<label>Last Name</label>
+														<input type="text" class="form-control" name="last_name" placeholder="last name" required="" aria-required="true">
+													</div>
+												</div>
+											</div>
+											<div class="form-group pb-3 text-start">
+												<label>Email ID</label>
+												<input type="email" class="form-control" name="email" placeholder="Email Address" required="" aria-required="true">
+											</div>
+											<div class="row pb-3 text-start">
+												<div class="col-sm-7">
+													<div class="form-group">
+														<label>Choose a Pass</label>
+														<select class="form-control" name="os0" required="" aria-required="true">
+															<option value="">Choose...</option>
+															<option value="Silver Pass">Silver Pass $49.00 USD</option>
+															<option value="Gold Pass">Gold Pass $99.00 USD</option>
+															<option value="VIP Pass">VIP Pass $149.00 USD</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-sm-5">
+													<div class="form-group">
+														<label>No. of Seats</label>
+														<select class="form-control" name="quantity" required="" aria-required="true">
+															<option value="">Choose...</option>
+															<option value="1">1 seat</option>
+															<option value="2">2 seats</option>
+															<option value="3">3 seats</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="text-center top-space">
+												<button type="submit" id="reserve-btn" class="btn btn-success btn-lg">Reserve my Seat</button>
+											</div>
+										</form>	
+									</div>	
+								</div>
+							
+									<!-- Modal footer -->
+									<div class="modal-footer">
+									<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+									</div>
+							
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<!--event timer-->
+	<article class="bg-gray py-5">
+		<h4 class="text-center s-head">EVENT WILL START IN</h4>
+		
+		<div class="container my-3 d-flex flex-wrap justify-content-center align-items-center">
+			
+			<div class="time-box">
+				<h2 class="m-0 display-2" id="day">00</h2>
+				<p class="m-0">DAYS</p>
+			</div><!--end remaining days-->
+			
+			<div class="time-box">
+				<h2 class="m-0 display-2" id="hour">00</h2>
+				<p class="m-0">HOURS</p>
+			</div><!--end remaining hours-->
+			
+			<div class="time-box">
+				<h2 class="m-0 display-2" id="minute">00</h2>
+				<p class="m-0">MINUTES</p>
+			</div><!--end remaining minutes-->
+			
+			<div class="time-box">
+				<h2 class="m-0 display-2" id="second">00</h2>
+				<p class="m-0">SECONDS</p>
+			</div><!--end remaining seconds-->
+			
+		</div>
+	</article><!--ends event timer-->
+		
+	
+	<!--our doctors-->
+	<article class="s-gap">
+		<h2 class="text-center font-weight-bold s-head">OUR FACULTY</h2>
+		<div class="line"></div>
+		<div class="container">
+			<div class="row" id="internationalDoc">
+				<h4 class="text-center mt-3 ">International Faculty</h4>
+				
+			</div><!--ends row of international faculty-->
+			
+			<div class="row mt-3" id="nationalDoc">
+				<h4 class="text-center mt-3">National Faculty</h4>
+				
+				
+			</div><!--ends row of national faculty 2-->
+			
+		</div><!--ends container-->
+	</article><!--ends our doctors-->
+	
+	
+	<!--schedule-->
+	<article class="py-3">
+		<h2 class="text-center s-head">THE SCHEDULE</h2>
+		<div class="line"></div>
+		<div class="text-center schedule">
+			<button class="btn btn-small btn-outline-success active mx-1" id="day1">
+				DAY ONE
+			</button>
+			<button class="btn btn-small btn-outline-success mx-1" id="day2">
+				DAY TWO
+			</button>
+			
+		</div><!--ends buttons-->
+		
+		<div class="container">
+			<div class="row justify-content-center tabs-contant active">
+				<div class="d-flex justify-content-center pt-4">
+					<div class="col-md-8">
+						<div class="day1">
+							<h4>SESSION-1</h4>
+							<ul>
+								<li>
+									The ICU of future
+								</li>
+								<li>
+									Unanticipated difficult airway-How to handle?
+								</li>
+								<li>
+									Humanizing ICU
+								</li>
+								<li>
+									The underutilized modality of EtCO2
+								</li>
+								<li>
+									Update on clinical management of shock
+								</li>
+								<li>
+									MAP sepsis-Working towards comprehensive diagnosis of sepsis
+								</li>
+								<li>
+									Panel Discussion-Reducing microbiological lab TAT
+								</li>
+								<li>
+									Microbiological Surveillance in ICU
+								</li>
+								<li>
+									Preventing HAI-The magic toolbox
+								</li>
+								<li>
+									Optimizing outcomes after cardiac arrest
+								</li>
+								<li>
+									e-ICU- anywhere & anytime
+								</li>
+								<li>
+									Non resolving pneumonia in ICU
+								</li>
+								<li>
+									BP goals in various clinical entities in ICU
+								</li>
+								<li>
+									Management of hypertension in ICU-Why, When, what & Where?
+								</li>
+								<li>
+									Panel Discussion Sepsis-Glimmer of hope-Adjuvant therapies
+								</li>
+								<li>
+									Extracorporeal therapies in toxicology
+								</li>
+								<li>
+									Debate- Early versus Late Initiation of dialysis
+								</li>
+								<li>
+									ICU preparedness for disasters	
+								</li>
+								<li>
+									Solutions to poor ICU donation rates
+								</li>
+							</ul>
+						</div><!--ends session 1-->
+					</div>
+				</div>
+				
+			</div>
+			<div class="row justify-content-center tabs-contant">
+				<div class="d-flex justify-content-center pt-4">
+					<div class="col-md-8">
+						<div class="day2">
+							<h4>SESSION-2</h4>
+							
+							<h6 class="py-2">DEBATE VOLUME VERSUS RATE BASED FEEDING</h6>
+							<ul>
+								<li>
+									EOL journey-Make it memorable
+								</li>
+								<li>
+									Walking home from ICU-Early mobilization in ICU
+								</li>
+								<li>
+									Critical Bleed –Role of PCC
+								</li>
+								<li>
+									When to refer for ecmo?
+								</li>
+								<li>
+									Post Intensive Care Syndrome
+								</li>
+								<li>
+									WHO trauma checklist
+								</li>
+								<li>
+									Are all carbepenems the same?
+								</li>
+								<li>
+									ARDS clinical varieties-Can we classify them?
+								</li>
+								<li>
+									IFI-Clinical Guidelines on management
+								</li>
+								<li>
+									IFI-Early diagnosis is the trick
+								</li>
+								<li>
+									Abdominal Compartment Syndrome-The pressure is on!
+								</li>
+								<li>
+									Refeeding syndrome
+								</li>
+								<li>
+									Stroke Guidelines-AIS
+								</li>
+								<li>
+									Stroke Guidelines -Hemorrhagic stroke
+								</li>
+							</ul>
+							
+							<h6  class="py-2">ULTRADYNAMICS</h6>
+							<ul>
+								<li>
+									Less is more for hemodynamic monitoring
+								</li>
+								<li>
+									Advance CO monitoring tools
+								</li>
+								<li>
+									USG assessment in shock
+								</li>
+								<li>
+									Lung Ultrasound in the Critically Ill: The BLUE Protocol
+								</li>
+								<li>
+									When to thrmobolyse a major pulmonary embolism
+								</li>
+							</ul>
+							
+							<h6  class="py-2">CRO –CHOOSING THE RIGHT OPTION</h6>
+							<ul>
+								<li>
+									Tigecycline
+								</li>
+								<li>
+									Minocycline
+								</li>
+								<li>
+									Fosfomycin
+								</li>
+								<li>
+									Polymyxin
+								</li>
+								<li>
+									EDTA
+								</li>
+								<li>
+									Newer BL+BLI
+								</li>
+							</ul>
+							
+						</div><!--ends session-2-->
+					</div>
+				</div>
+			</div>
+			
+		</div><!--ends container-->
+	</article><!--ends schedule-->
+
+	<section class="s-gap">
+		<div class="sec-head pb-3">
+			<h2 class="s-head text-center"><span>Gallery</span></h2>
+			<div class="line text-center"></div>
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="gallery-item py-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+					<a href="img/gallery/img1.jpg" target="_blank">
+						<img src="img/gallery/img1.jpg" alt="">
+					</a>
+				</div>
+
+				<div class="gallery-item py-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+					<a href="img/gallery/img2.jpg" target="_blank">
+						<img src="img/gallery/img2.jpg" alt="">
+					</a>
+				</div>
+
+				<div class="gallery-item py-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+					<a href="img/gallery/img3.jpg" target="_blank">
+						<img src="img/gallery/img3.jpg" alt="">
+					</a>
+				</div>
+
+				<div class="gallery-item py-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+					<a href="img/gallery/img4.jpg" target="_blank">
+						<img src="img/gallery/img4.jpg" alt="">
+					</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="gallery-item py-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+					<a href="img/gallery/img5.jpg" target="_blank">
+						<img src="img/gallery/img5.jpg" alt="">
+					</a>
+				</div>
+
+				<div class="gallery-item py-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+					<a href="img/gallery/img6.jpg" target="_blank">
+						<img src="img/gallery/img6.jpg" alt="">
+					</a>
+				</div>
+
+				<div class="gallery-item py-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+					<a href="img/gallery/img7.jpg" target="_blank">
+						<img src="img/gallery/img7.jpg" alt="">
+					</a>
+				</div>
+
+				<div class="gallery-item py-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+					<a href="img/gallery/img8.jpg" target="_blank">
+						<img src="img/gallery/img8.jpg" alt="">
+					</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="gallery-item py-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+					<a href="img/gallery/img9.jpg" target="_blank">
+						<img src="img/gallery/img9.jpg" alt="">
+					</a>
+				</div>
+
+				<div class="gallery-item py-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+					<a href="img/gallery/img10.jpg" target="_blank">
+						<img src="img/gallery/img10.jpg" alt="">
+					</a>
+				</div>
+
+				<div class="gallery-item py-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+					<a href="img/gallery/img11.jpg" target="_blank">
+						<img src="img/gallery/img11.jpg" alt="">
+					</a>
+				</div>
+
+				<div class="gallery-item py-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+					<a href="img/gallery/img12.jpg" target="_blank">
+						<img src="img/gallery/img12.jpg" alt="">
+					</a>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	
+	
+	<section class="contact-form">
+		<div class="container">
+			<h2 class="text-center s-head">SEND US A MESSAGE</h2>
+			<div class="line"></div>
+			<p class="text-center fs-5 mb-5">If you have any questions about the event, please contact us <br> directly. We will respond for sure.</p>
+			<form action="">
+				<div class="row justify-content-center">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="row mb-3">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="fname">First Name:</label>
+									<input type="text" class="form-control" id="fname" placeholder="First Name">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="lname">Last Name:</label>
+									<input type="text" class="form-control" id="lname" placeholder="Last Name"> 
+								</div>
+							</div>
+						</div>
+		
+						<div class="form-group mb-3">
+							<label for="email">Email ID:</label>
+							<input type="email" class="form-control" id="email" placeholder="Email Address">
+						</div>
+						<div class="form-group mb-3">
+							<label for="phone">Phone Number:</label>
+							<input type="text" class="form-control" id="phone" placeholder="Phone Number">
+						</div>
+						<div class="form-group mb-3">
+							<label for="message">Your Message</label>
+							<textarea class="form-control" name="message" rows="6" placeholder="Enter your message here" required="" aria-required="true"> </textarea>
+						</div>
+						<div class="d-grid">
+							<button type="submit" class="btn btn-success btn-primary btn-block btn-lg text-uppercase fw-bold" >Send Message</button>
+						</div>
+						
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+	
+	<section class="footer-section s-gap">
+		<div class="container">
+			<h4 class="fhead1 fs-3">LETS GATHER TOGETHER</h4>
+			<h2 class="fhead2 fs-1 text-secondary" >JOIN THE CONFERENCE</h2>
+			<div class="footer_bottom-bg">
+			<a class="btn btn-success " href="#" data-bs-toggle="modal" data-bs-target="#myModal">RESERVE MY SEAT</a>
+		</div>
+	</section>
+	
+	<footer>
+		<div class="social-link">
+			<ul>
+				<li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+				<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+				<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+			</ul>
+			<p> <small class="text-muted">Copyright © 2015. All rights reserved. Made in India</small></p>
+			
+			
+		</div>
+	</footer>
+	
+<script src="js/app.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
