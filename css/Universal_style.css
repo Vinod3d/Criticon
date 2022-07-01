@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 a{text-decoration: none;}
@@ -15,7 +16,7 @@ a{text-decoration: none;}
 :root {
     --fontColor: #868686;
     --green: #61ec61;
-    --green2 : #198754;
+    --green2 : #4eae49;
     --bg-gray:#f1f1f1;
     --font1: 'Roboto', sans-serif;
     --font2: 'Poppins', sans-serif;
@@ -23,7 +24,11 @@ a{text-decoration: none;}
     --font4: 'Montserrat', sans-serif;
 }
 .navbar{
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 .logo{
     border: 3px solid #349b3f96;
@@ -40,6 +45,9 @@ a{text-decoration: none;}
 .nav-link{
     color: #818181 !important;
     font-size: 15px;
+}
+.nav-link:hover{
+    color: var(--green2) !important;
 }
 .nav-item{
     margin: 0 5px;
@@ -58,11 +66,17 @@ a{text-decoration: none;}
     color: #fff !important;
 }
 .slide-contant h2{
-    font-size: 40px;
+    font-size: 45px;
     font-weight: bold;
     font-family: var(--font1);
     color: #fff;
+    text-shadow: 2px 2px #000;
 }
+.slide-contant p{
+    color: #45d345 !important;
+    text-shadow: 2px 2px #000;
+}
+.purple{color: #ddaedd;}
 .slide-contant a{
     background: #fff;
     border: 2px solid #fff;
@@ -78,11 +92,11 @@ a{text-decoration: none;}
     background: transparent;
 }
 .location{
-    border: 2px dashed white;
+    border: 2px dashed #ddaedd;
     display: inline-block;
     padding: 15px 50px;
     border-radius: 20px;
-    font-weight: bold;
+    /* padding: 0%; */
 }
 .location p{
     font-size: 17px !important;
@@ -105,8 +119,14 @@ a{text-decoration: none;}
     font-weight: 700;
     font-size: 30px;
     color: var(--fontColor);
-    margin-bottom: 20px;
-    position: relative;
+    margin-bottom: 10px;
+}
+.line{
+    width: 200px;
+    height: 3px;
+    margin: 0 auto;
+    background: var(--green2);
+    margin-bottom: 30px;
 }
 
 .time-box{
@@ -117,13 +137,19 @@ a{text-decoration: none;}
 	text-align:center;
 }
 .bg-light-gray{background-color:#f1f1f1;}
-
-.doctor-card{
+#internationalDoc .doctor-card{
+    height: 400px;
     text-align:center;
     border: 1px solid green;
     border-radius: 20px;
     width: 100%;
-    height: 400px;
+}
+#nationalDoc .doctor-card{
+    text-align:center;
+    border: 1px solid green;
+    border-radius: 20px;
+    width: 100%;
+    height: 320px;
 
     /* width: 50%;
     margin: 0 auto;
@@ -131,7 +157,7 @@ a{text-decoration: none;}
     border-radius: 10px; */
 }
 .doctor-card>img{
-    max-width: 14rem;
+    max-width: 10rem;
     padding-top: 20px;
 	margin-bottom:0.3rem;
 }
@@ -179,15 +205,6 @@ a{text-decoration: none;}
     width: 100%;
     height: auto;
 }
-.line{
-    width: 200px;
-    height: 3px;
-    margin: 0 auto;
-    background: var(--green2);
-    margin-bottom: 20px;
-}
-
-
 /* contact form */
 
 label{
@@ -263,5 +280,45 @@ footer .social-link{
     font-size: 25px;
 }
 
+@media (max-width: 992px){
+    .navbar.px-5{
+        padding: 0 !important;
+    }
+    .navbar-nav{
+        padding-top: 20px !important;
+    }
+    .nav-item{
+        line-height: 36px !important;
+    }
+}
+@media (max-width: 800px){
+    .slide-contant h2{
+        font-size: 37px;
+    }
+    .contact-form p{
+        font-size: 1rem !important;
+    }
+   
+}
+
+@media (max-width: 480px){
+    .slide-contant h2{
+        font-size: 27px;
+    }
+    .slide-contant .fs-4 {
+        font-size: 15px !important;
+    }
+    .slide-contant h2.fs-3{
+        font-size: 18px !important;
+    }
+}
+@media (max-width:400px){
+    .location h3{
+        font-size: 1.17rem !important; 
+    }
+    .location p{
+        font-size: 15px !important;
+    }
+}
 
 /* https://demo.web3canvas.com/themeforest/gather/index-slider.html#schedule */
