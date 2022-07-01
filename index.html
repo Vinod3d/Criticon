@@ -15,7 +15,7 @@
 <body>
 	
 	
-	<nav class="navbar navbar-expand-lg navbar-light bg-white px-5">
+	<nav class="navbar navbar-expand-lg navbar-light bg-white px-2">
 		<div class="container-fluid">
 			<a class="navbar-brand logo" href="#">
 				<h2 class="fs-4 m-0 p-1">Criti<span>con</span></h2>
@@ -29,10 +29,10 @@
 						<a class="nav-link active" href="#">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Our Faculty</a>
+						<a class="nav-link" href="#faculty">Our Faculty</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Schedule</a>
+						<a class="nav-link" href="#schedule">Schedule</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">Our Partners</a>
@@ -41,7 +41,7 @@
 						<a class="nav-link" href="#">Venue</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Contact</a>
+						<a class="nav-link" href="#contact">Contact</a>
 					</li>
 					
 				</ul>
@@ -54,8 +54,8 @@
 			<div class="container py-5">
 				<div class="slide-contant py-5">
 					<h2 class="pb-2">CRITICON RAIPUR - 2022</h2>
-					<p class="fst-italic fs-4">2nd Annual Congress of Indian Sepsis Forum</p>
-					<h2 class="fs-3 pb-2">"EXCELLENCE IN CRITICAL CARE"</h2>
+					<p class="fst-italic fs-4 purple">2nd Annual Congress of Indian Sepsis Forum</p>
+					<h2 class="fs-3 pb-3">"EXCELLENCE IN CRITICAL CARE"</h2>
 					<div class="location pb-2">
 						<h3>September 3rd - 4th 2022</h3>
 						<p class="text-white">Venue : Hotel Courtyard by Marriott <br>
@@ -66,12 +66,12 @@
 
 						<!-- The Modal -->
 						<div class="modal" id="myModal">
-							<div class="modal-dialog modal-lg">
+							<div class="modal-dialog col-md-6">
 								<div class="modal-content">
 							
 									<!-- Modal Header -->
-									<div class="modal-header">
-										<h4 class="modal-title">Modal Heading</h4>
+									<div class="modal-header text-center">
+										<h4 class="modal-title s-head ">Event Registration</h4>
 										<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
 									</div>
 							
@@ -120,21 +120,20 @@
 													</div>
 												</div>
 											</div>
-											<div class="text-center top-space">
+											<div class="text-center top-space py-3">
 												<button type="submit" id="reserve-btn" class="btn btn-success btn-lg">Reserve my Seat</button>
 											</div>
 										</form>	
-									</div>	
+									</div>
+									
 								</div>
 							
-									<!-- Modal footer -->
-									<div class="modal-footer">
-									<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-									</div>
+									
 							
 								</div>
 							</div>
 						</div>
+						<!-- modal close -->
 					</div>
 				</div>
 			</div>
@@ -173,11 +172,11 @@
 		
 	
 	<!--our doctors-->
-	<article class="s-gap">
+	<article class="s-gap" id="faculty">
 		<h2 class="text-center font-weight-bold s-head">OUR FACULTY</h2>
 		<div class="line"></div>
 		<div class="container">
-			<div class="row" id="internationalDoc">
+			<div class="row justify-content-around" id="internationalDoc">
 				<h4 class="text-center mt-3 ">International Faculty</h4>
 				
 			</div><!--ends row of international faculty-->
@@ -193,7 +192,7 @@
 	
 	
 	<!--schedule-->
-	<article class="py-3">
+	<article class="py-3 s-gap" id="schedule">
 		<h2 class="text-center s-head">THE SCHEDULE</h2>
 		<div class="line"></div>
 		<div class="text-center schedule">
@@ -207,7 +206,7 @@
 		</div><!--ends buttons-->
 		
 		<div class="container">
-			<div class="row justify-content-center tabs-contant active">
+			<div class="row justify-content-center tabs-contant topic active">
 				<div class="d-flex justify-content-center pt-4">
 					<div class="col-md-8">
 						<div class="day1">
@@ -276,7 +275,7 @@
 				</div>
 				
 			</div>
-			<div class="row justify-content-center tabs-contant">
+			<div class="row justify-content-center tabs-contant topic">
 				<div class="d-flex justify-content-center pt-4">
 					<div class="col-md-8">
 						<div class="day2">
@@ -466,23 +465,23 @@
 	</section>
 	
 	
-	<section class="contact-form">
+	<section class="contact-form s-gap" id="contact">
 		<div class="container">
 			<h2 class="text-center s-head">SEND US A MESSAGE</h2>
 			<div class="line"></div>
-			<p class="text-center fs-5 mb-5">If you have any questions about the event, please contact us <br> directly. We will respond for sure.</p>
+			<p class="text-center fs-5 mb-5">If you have any questions about the event, <br> please contact us directly. We will respond for sure.</p>
 			<form action="">
 				<div class="row justify-content-center">
 					<div class="col-md-6 col-md-offset-3">
 						<div class="row mb-3">
 							<div class="col-md-6">
-								<div class="form-group">
+								<div class="form-group mb-3">
 									<label for="fname">First Name:</label>
 									<input type="text" class="form-control" id="fname" placeholder="First Name">
 								</div>
 							</div>
 							<div class="col-md-6">
-								<div class="form-group">
+								<div class="form-group mb-3">
 									<label for="lname">Last Name:</label>
 									<input type="text" class="form-control" id="lname" placeholder="Last Name"> 
 								</div>
@@ -523,9 +522,9 @@
 	<footer>
 		<div class="social-link">
 			<ul>
-				<li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-				<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-				<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+				<li><a href="https://www.facebook.com/ramkrishnacare" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+				<li><a href="https://www.instagram.com/ramkrishnacarehospital/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+				<li><a href="https://in.linkedin.com/in/ramkrishna-care-hospital-2600a0163" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
 			</ul>
 			<p> <small class="text-muted">Copyright © 2015. All rights reserved. Made in India</small></p>
 			
